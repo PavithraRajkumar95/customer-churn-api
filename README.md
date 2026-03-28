@@ -124,7 +124,7 @@ customer-churn-project/
 
 
 
-###**🐳 Run with Docker**
+**🐳 Run with Docker**
 
 Build image
 
@@ -136,7 +136,7 @@ Run container
            
 
 
-###**🔮 API Usage**
+**🔮 API Usage**
 
 Endpoint
 
