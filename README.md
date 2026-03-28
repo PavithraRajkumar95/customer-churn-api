@@ -142,25 +142,25 @@ Output
   "churn_prediction": 1
 }
 
-☁️ Deployment
+## ☁️ Deployment
 Dockerized application
 Deployed on AWS EC2
 
-⚠️ Note
+## ⚠️ Note
 
 Dataset is not included in this repository due to size constraints.
 
-📌 Future Improvements
+## 📌 Future Improvements
 Add frontend dashboard
 Try advanced models (XGBoost)
 Add CI/CD pipeline
 Improve feature engineering
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Pavithra Rajkumar
 
-⭐ If you like this project
+## ⭐ If you like this project
 
 Give it a star ⭐ on GitHub!
 
