@@ -11,7 +11,7 @@ http://44.193.80.59:8000/docs
 ![Swagger UI](https://raw.githubusercontent.com/PavithraRajkumar95/customer-churn-api/main/swagger.png)
 
 ### Sample input
-![Sample Input]()
+![Sample Input](https://raw.githubusercontent.com/PavithraRajkumar95/customer-churn-api/main/sampledatainput.png)
 
 ### Prediction Example
 ![Prediction Output]()
