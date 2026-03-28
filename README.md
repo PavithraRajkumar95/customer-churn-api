@@ -123,7 +123,8 @@ customer-churn-project/
            http://127.0.0.1:8000/docs
 
 
-**🐳 Run with Docker**
+
+###**🐳 Run with Docker**
 
 Build image
 
@@ -132,9 +133,10 @@ Build image
 Run container
 
            docker run -d -p 8000:8000 churn-api
+           
 
 
-**🔮 API Usage**
+###**🔮 API Usage**
 
 Endpoint
 
