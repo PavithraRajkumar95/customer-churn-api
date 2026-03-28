@@ -112,14 +112,14 @@ customer-churn-project/
            ```bash
            git clone https://github.com/PavithraRajkumar95/customer-churn-api.git
            cd customer-churn-api
-    2. Create virtual environment
+### 2. Create virtual environment
            python -m venv venv
            venv\Scripts\activate   # Windows
-    3. Install dependencies
+### 3. Install dependencies
            pip install -r requirements.txt
-    4. Run the API
+### 4. Run the API
            uvicorn app.main:app --reload
-    5. Open in browser
+### 5. Open in browser
            http://127.0.0.1:8000/docs
 
 ###🐳 Run with Docker
