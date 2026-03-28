@@ -8,7 +8,10 @@ http://44.193.80.59:8000/docs
 ## 📸 Demo
 
 ### API Swagger UI
-![Swagger UI]()
+![Swagger UI](https://raw.githubusercontent.com/PavithraRajkumar95/customer-churn-api/main/swagger.png)
+
+### Sample input
+![Sample Input]()
 
 ### Prediction Example
 ![Prediction Output]()
