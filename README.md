@@ -1,10 +1,25 @@
-## 🌍 Live API
-
-http://44.193.80.59:8000/docs
-
 # 📊 Customer Churn Prediction API
 
-An end-to-end Machine Learning project that predicts whether a customer will churn or not. The project includes data preprocessing, model training, and deployment using FastAPI and Docker.
+## 🌍 Live API
+http://44.193.80.59:8000/docs
+
+---
+
+## 📸 Demo
+
+### API Swagger UI
+![Swagger UI]()
+
+### Prediction Example
+![Prediction Output]()
+
+---
+
+## 🏗️ Architecture
+
+User → FastAPI API → ML Model → Prediction Response  
+           ↓  
+        Docker Container → AWS EC2 Instance  
 
 ---
 
@@ -16,17 +31,54 @@ Customer churn is a critical problem in the telecom industry. This project build
 
 ## 🧠 Features
 
-- Data preprocessing pipeline
-- Feature engineering & encoding
-- Model training (Linear, Ridge, Lasso)
-- Model evaluation
-- FastAPI-based prediction API
-- Dockerized application
-- Ready for cloud deployment (AWS)
+- Data preprocessing pipeline  
+- Feature engineering & encoding  
+- Model training and evaluation  
+- FastAPI-based prediction API  
+- Dockerized application  
+- Deployed on AWS EC2  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python  
+- Pandas, NumPy, Scikit-learn  
+- FastAPI  
+- Docker  
+- AWS EC2  
+
+---
+
+## 📊 Model Comparison
+
+| Model                          | Accuracy | Recall (Churn) | Notes |
+|--------------------------------|----------|----------------|------|
+| Logistic Regression            | 0.81     | 0.61           | Misses many churn customers |
+| Logistic Regression (Balanced) | 0.73     | 0.79 ✅        | Best at detecting churn |
+| Random Forest                  | 0.79     | 0.52           | Poor recall for churn |
+
+---
+
+## ✅ Final Model Selection
+
+Logistic Regression with class weights was selected as the final model.
+
+Although it has slightly lower accuracy, it significantly improves recall for churn prediction. In a business context, identifying customers likely to churn is more important than overall accuracy, as it allows proactive retention strategies.
+
+---
+
+## 📈 Evaluation Strategy
+
+- Recall was prioritized over accuracy  
+- Missing a churn customer leads to revenue loss  
+- False positives are acceptable in this case  
+- Focus was on maximizing churn detection  
 
 ---
 
 ## 🗂️ Project Structure
+
 customer-churn-project/
 │
 ├── app/
@@ -41,9 +93,6 @@ customer-churn-project/
 │ ├── churn_model.pkl # Trained model
 │ └── columns.json # Feature columns
 │
-├── data/
-│ └── telco_customer_churn.csv
-│
 ├── notebooks/
 │ └── eda1.ipynb # Exploratory Data Analysis
 │
@@ -51,7 +100,6 @@ customer-churn-project/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
 
 ---
 
@@ -61,73 +109,45 @@ customer-churn-project/
 ```bash
 git clone https://github.com/PavithraRajkumar95/customer-churn-api.git
 cd customer-churn-api
-
-### 2. Create virtual environment
-
+2. Create virtual environment
 python -m venv venv
 venv\Scripts\activate   # Windows
-
-### 3.Install dependencies
-
+3. Install dependencies
 pip install -r requirements.txt
-
-### 4. Run the API
-
+4. Run the API
 uvicorn app.main:app --reload
-
-### 5. Open in browser
-
+5. Open in browser
 http://127.0.0.1:8000/docs
-
 🐳 Run with Docker
 Build image
-
 docker build -t churn-api .
-
 Run container
-
 docker run -d -p 8000:8000 churn-api
-
 🔮 API Usage
-Endpoint:
+Endpoint
 POST /predict
-
-Sample Input:
+Sample Input
 {
   "tenure": 12,
   "MonthlyCharges": 70.5,
-  "TotalCharges": 800,
-  ...
+  "TotalCharges": 800
 }
-Output:
+Output
 {
   "churn_prediction": 1
 }
-
-📈 Models Used
-Linear Regression
-Ridge Regression
-Lasso Regression
-
-Ridge Regression was selected for better stability and handling multicollinearity.
-
-🧪 Model Evaluation
-MAE (Mean Absolute Error)
-Feature importance analysis
-Residual distribution checks
-
 ☁️ Deployment
 Dockerized application
-Dockerized application
+Deployed on AWS EC2
+⚠️ Note
 
-Deployable on AWS EC2
+Dataset is not included in this repository due to size constraints.
+
 📌 Future Improvements
 Add frontend dashboard
-Use advanced models (XGBoost, Random Forest)
+Try advanced models (XGBoost)
 Add CI/CD pipeline
 Improve feature engineering
-
-
 👩‍💻 Author
 
 Pavithra Rajkumar
@@ -135,7 +155,4 @@ Pavithra Rajkumar
 ⭐ If you like this project
 
 Give it a star ⭐ on GitHub!
-
-
----
 
