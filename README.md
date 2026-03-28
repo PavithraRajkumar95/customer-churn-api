@@ -123,12 +123,17 @@ customer-churn-project/
            http://127.0.0.1:8000/docs
 
 🐳 Run with Docker
+
 Build image
-docker build -t churn-api .
+
+           docker build -t churn-api .
+
 Run container
-docker run -d -p 8000:8000 churn-api
+
+           docker run -d -p 8000:8000 churn-api
 
 🔮 API Usage
+
 Endpoint
 POST /predict
 Sample Input
@@ -143,7 +148,9 @@ Output
 }
 
 ☁️ Deployment
+
 Dockerized application
+
 Deployed on AWS EC2
 
 ⚠️ Note
@@ -151,9 +158,13 @@ Deployed on AWS EC2
 Dataset is not included in this repository due to size constraints.
 
 📌 Future Improvements
+
 Add frontend dashboard
+
 Try advanced models (XGBoost)
+
 Add CI/CD pipeline
+
 Improve feature engineering
 
 
