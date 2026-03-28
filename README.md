@@ -14,7 +14,7 @@ http://44.193.80.59:8000/docs
 ![Sample Input](https://raw.githubusercontent.com/PavithraRajkumar95/customer-churn-api/main/sampledatainput.png)
 
 ### Prediction Example
-![Prediction Output]()
+![Prediction Output](https://raw.githubusercontent.com/PavithraRajkumar95/customer-churn-api/main/prediction.png)
 
 ---
 
@@ -121,11 +121,13 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 5. Open in browser
 http://127.0.0.1:8000/docs
+
 🐳 Run with Docker
 Build image
 docker build -t churn-api .
 Run container
 docker run -d -p 8000:8000 churn-api
+
 🔮 API Usage
 Endpoint
 POST /predict
@@ -139,9 +141,11 @@ Output
 {
   "churn_prediction": 1
 }
+
 ☁️ Deployment
 Dockerized application
 Deployed on AWS EC2
+
 ⚠️ Note
 
 Dataset is not included in this repository due to size constraints.
@@ -151,6 +155,7 @@ Add frontend dashboard
 Try advanced models (XGBoost)
 Add CI/CD pipeline
 Improve feature engineering
+
 👩‍💻 Author
 
 Pavithra Rajkumar
