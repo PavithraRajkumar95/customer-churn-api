@@ -1,3 +1,7 @@
+## 🌍 Live API
+
+http://44.193.80.59:8000/docs
+
 # 📊 Customer Churn Prediction API
 
 An end-to-end Machine Learning project that predicts whether a customer will churn or not. The project includes data preprocessing, model training, and deployment using FastAPI and Docker.
