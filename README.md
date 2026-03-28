@@ -135,13 +135,16 @@ Run container
 🔮 API Usage
 
 Endpoint
+
 POST /predict
+
 Sample Input
 {
   "tenure": 12,
   "MonthlyCharges": 70.5,
   "TotalCharges": 800
 }
+
 Output
 {
   "churn_prediction": 1
@@ -149,9 +152,9 @@ Output
 
 ☁️ Deployment
 
-Dockerized application
+1.Dockerized application
 
-Deployed on AWS EC2
+2.Deployed on AWS EC2
 
 ⚠️ Note
 
@@ -159,19 +162,19 @@ Dataset is not included in this repository due to size constraints.
 
 📌 Future Improvements
 
-Add frontend dashboard
+1.Add frontend dashboard
 
-Try advanced models (XGBoost)
+2.Try advanced models (XGBoost)
 
-Add CI/CD pipeline
+3.Add CI/CD pipeline
 
-Improve feature engineering
+4.Improve feature engineering
 
 
 
 ### 👩‍💻 Author
 
-Pavithra Rajkumar
+**Pavithra Rajkumar**
 
 ### ⭐ If you like this project
 
